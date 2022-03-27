@@ -25,7 +25,7 @@ export default function Whether(props) {
 }
 Whether.defaultProps = {
     time: (new Date()).toLocaleTimeString().slice(0, 4),
-    state: "NA"
+    cityName: "NA"
 }
 const Whetherstyle = styled.div`
 display: flex;

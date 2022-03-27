@@ -2,17 +2,11 @@ import React from 'react'
 import Whether from './Whether'
 
 export default function ExtendedWeather(props) {
-    console.log(props.extendedWeather.list[0]);
     let y = ((new Date()).toISOString()).slice(0, 10);
-    console.log(y);
     let pattern = new RegExp(y);
     let today = (props.extendedWeather.list).filter((value) => {
         return pattern.test(value.dt_txt);
     })
-    console.log(today)
-
-
-    console.log(today[0].weather[0].description)
     return (
 
         <div>
