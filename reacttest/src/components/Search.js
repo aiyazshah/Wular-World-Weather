@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
+import { Button } from './Styles'
 
 export default function Search({ searchCity, handleClick, setSearchCity }) {
     function handleonChange(e) {
@@ -12,7 +13,7 @@ export default function Search({ searchCity, handleClick, setSearchCity }) {
                 <label htmlFor="city"><span>Search City</span>
                     <input type="text" value={searchCity} onChange={handleonChange} />
                 </label>
-                <button onClick={handleClick}>Submit</button>
+                <Button onClick={handleClick}>Submit</Button>
             </Searchstyle>
         </div>
     )
@@ -33,18 +34,6 @@ input{
     border-radius: 5px;
     font-weight: bold;
 }
-button{
-    margin-left: 1.5rem;
-    height: 2rem;
-    padding: 0 1rem;
-   
-    outline: 1px gray;
-  border:2px solid green;
-  border-radius:4px; 
-  font-weight: bold;   
- &:hover{
-background-color: green;
-color:white;
- }
-}
+
+
 `

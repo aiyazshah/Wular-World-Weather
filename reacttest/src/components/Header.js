@@ -16,6 +16,7 @@ export default function Header() {
     )
 }
 const Headerstyle = styled.div`
+border:2px solid red;
 margin-left: 1cm;
 font-family: 'Lobster';
 display: flex;
